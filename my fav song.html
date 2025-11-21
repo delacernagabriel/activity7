@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gabcodex</title>
+    <link rel="shortcut icon" href="favicon.png.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.png.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            background: url('https://64.media.tumblr.com/7e7b401c0e5be3d5f8cae275a88d0b15/tumblr_o4ttzi7xsy1u3h3vgo4_400.gif') 
+                        no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Center everything */
+        .center {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        /* Music player styling */
+        .audio-box {
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.6);
+            border: 2px solid white;
+            border-radius: 12px;
+            backdrop-filter: blur(4px);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+        }
+
+        audio {
+            width: 300px;
+        }
+
+        /* Video centering */
+        iframe {
+            border-radius: 10px;
+            border: 2px solid white;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+
+<body> 
+    <a href="about.html">about</a>
+    <a href="contact.html">contact</a>
+
+    <!-- Centered + styled audio -->
+    <div class="center">
+        <div class="audio-box">
+            <audio controls>
+                <source src="Avenged Sevenfold - Afterlife [Live] (2).mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <!-- Centered video -->
+    <div class="center">
+        <iframe width="560" height="315"
+            src="Avenged Sevenfold - Afterlife [Live] - Avenged Sevenfold (360p, h264).mp4"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</body>
+</html>
